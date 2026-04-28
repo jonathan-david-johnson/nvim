@@ -6,25 +6,9 @@ A modern Neovim setup built around LSP, Telescope, and lazy-loaded plugins. Targ
 
 - [Neovim](https://neovim.io/) >= 0.10
 - [git](https://git-scm.com/)
-- A [Nerd Font](https://www.nerdfonts.com/) (for icons)
+- [Nerd Font](https://www.nerdfonts.com/) (for icons)
 - `make` (for telescope-fzf-native)
 - Language-specific tooling (see [Formatters](#formatters) below)
-
-## Installation
-
-Back up any existing config first:
-
-```sh
-mv ~/.config/nvim ~/.config/nvim.bak
-```
-
-Then clone this repo:
-
-```sh
-git clone https://github.com/jonathan-david-johnson/nvim ~/.config/nvim
-```
-
-Open Neovim — [lazy.nvim](https://github.com/folke/lazy.nvim) will bootstrap itself and install all plugins automatically on first launch.
 
 ## Structure
 
