@@ -56,6 +56,15 @@ end
 
 detect_background()
 
+vim.api.nvim_create_augroup("MarkdownWrap", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = "MarkdownWrap",
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.wrap = true
+  end,
+})
+
 -- Use terminal background colors
 vim.cmd([[
   highlight Normal guibg=NONE ctermbg=NONE
